@@ -11,7 +11,7 @@ const Admin = () => {
   useEffect(() => {
     setLoading(true);
 
-    axios
+    axiosj
       .get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/product`)
       .then((response) => {
         setProduct(response.data.data);
